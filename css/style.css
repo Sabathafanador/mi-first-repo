@@ -206,3 +206,62 @@ align-items: center;
        }
       
 
+/*Queries Index */
+
+@media screen and (max-width:500px){
+  .container{
+    background:rgb(161, 93, 221) ;
+    grid-template-columns: 1fr;
+   
+  }
+  
+  .container .content{
+  grid-column: 1/6;
+  
+  }
+
+.container .sidebar{
+  grid-column: 1/6;
+}
+
+
+.container .another{
+  grid-column: 1/6;
+}
+
+
+}
+
+/*Queries Animales */
+
+@media screen and (max-width:500px){
+ .contodo{
+  background: rgb(226, 117, 208);
+  grid-template-columns: 1fr;
+ } 
+
+.contodo .conmas{
+
+  grid-column: 1/6;
+
+
+}
+.contodo .sidebari{
+  grid-column: 1/6;
+}
+
+.contodo .post{
+  grid-column: 1/6;
+}
+
+
+}
+
+
+  
+
+
+
+   
+  
+    
