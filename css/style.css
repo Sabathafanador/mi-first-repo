@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
+.logo{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
 body{
     background: rgb(244, 229, 201);
 }
@@ -40,6 +44,8 @@ nav li:hover{
     background-color: black;
 
 }
+
+
 /*Periquitos para animales*/
 
 
@@ -47,7 +53,7 @@ nav li:hover{
 
 
 
-/*GRIDS*/
+/*GRIDS index*/
 .container{
 background: rgb(227, 219, 219);
 width: 90%;
@@ -123,7 +129,6 @@ align-items: center;
  background-color: grey;
  justify-content: center;
    }
-
 
 
 
@@ -206,6 +211,247 @@ align-items: center;
        }
       
 
+/*GRIDS Viajes*/
+
+.contodouno{
+  background: rgb(92, 75, 111);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5,1fr);
+  }
+  
+  .contodouno> .temauno,
+  .contodouno> .conmasuno,
+  .contodouno> .sidebariuno,
+  .contodouno> .fultimouno,
+  .contodouno> div
+  {
+      background: wheat;
+      padding: 20px;
+      border: 1px solid rgba(52, 5, 2, 0.356);
+  }
+  
+  .contodouno .temauno{
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+
+
+  }
+    .fultimouno{
+      display: grid;
+      grid-column: 1/6;
+      background-color: grey;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       
+    }  
+  
+  .contodouno .conmasuno{
+     
+     display: grid; 
+     grid-column: span 3;
+  }
+  .contodouno .sidebariuno{
+      grid-column: span 2;
+    color: black;
+      background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  }
+  
+  .contodouno .infouno{
+  background-color: cadetblue;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+  }
+  
+  .conmasuno .infouno h2,
+  .conmasuno .infouno p{
+  padding: 10px;
+  }
+  
+  .postuno{
+  background: violet;
+  color: black;
+  height: 180px;
+  display: grid;
+  display: flex;
+  align-items: center;
+   background-color: grey;
+   justify-content: center;
+     }
+    
+
+/*GRIDS Ciencia */
+.contodotres{
+  background: rgb(92, 75, 111);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5,1fr);
+  }
+  
+  .contodotres> .tematres,
+  .contodotres> .conmastres,
+  .contodotres> .sidebaritres,
+  .contodotres> .fultimotres,
+  .contodotres> div
+  {
+      background: wheat;
+      padding: 20px;
+      border: 1px solid rgba(52, 5, 2, 0.356);
+  }
+  
+  .contodotres .tematres{
+  display: grid;
+  grid-column: 1/6;
+  
+      background-color: grey;
+      color: black;
+  }
+    .fultimotres{
+      display: grid;
+      grid-column: 1/6;
+      background-color: grey;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       
+    }  
+  
+  .contodotres .conmastres{
+     
+     display: grid; 
+     grid-column: span 3;
+  }
+  .contodotres .sidebaritres{
+      grid-column: span 2;
+    color: black;
+      background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  }
+  
+  .contodotres .infotres{
+  background-color: cadetblue;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+  }
+  
+  .conmastres .infotres h2,
+  .conmastres .infotres p{
+  padding: 10px;
+  }
+  
+  .posttres{
+  background: violet;
+  color: black;
+  height: 180px;
+  display: grid;
+  display: flex;
+  align-items: center;
+   background-color: grey;
+   justify-content: center;
+     }
+    
+
+
+/*GRIDS Curiosidades */
+.contododos{
+  background: rgb(92, 75, 111);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5,1fr);
+  }
+  
+  .contododos> .temados,
+  .contododos> .conmasdos,
+  .contododos> .sidebaridos,
+  .contododos> .fultimodos,
+  .contododos> div
+  {
+      background: wheat;
+      padding: 20px;
+      border: 1px solid rgba(52, 5, 2, 0.356);
+  }
+  
+  .contododos .temados{
+  display: grid;
+  grid-column: 1/6;
+  
+      background-color: grey;
+      color: black;
+  }
+    .fultimodos{
+      display: grid;
+      grid-column: 1/6;
+      background-color: grey;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       
+    }  
+  
+  .contododos .conmasdos{
+     
+     display: grid; 
+     grid-column: span 3;
+  }
+  .contododos .sidebaridos{
+      grid-column: span 2;
+    color: black;
+      background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  }
+  
+  .contododos .infodos{
+  background-color: cadetblue;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+  }
+  
+  .conmasdos .infodos h2,
+  .conmasdos .infodos p{
+  padding: 10px;
+  }
+  
+  .postdos{
+  background: violet;
+  color: black;
+  height: 180px;
+  display: grid;
+  display: flex;
+  align-items: center;
+   background-color: grey;
+   justify-content: center;
+     }
+    
+
+
 /*Queries Index */
 
 @media screen and (max-width:500px){
@@ -232,25 +478,25 @@ align-items: center;
 
 }
 
-/*Queries Animales */
+/*Queries Viajes */
 
 @media screen and (max-width:500px){
- .contodo{
+ .contodouno{
   background: rgb(226, 117, 208);
   grid-template-columns: 1fr;
  } 
 
-.contodo .conmas{
+.contodouno .conmasuno{
 
   grid-column: 1/6;
 
 
 }
-.contodo .sidebari{
+.contodouno .sidebariuno{
   grid-column: 1/6;
 }
 
-.contodo .post{
+.contodouno .anexouno{
   grid-column: 1/6;
 }
 
@@ -258,8 +504,81 @@ align-items: center;
 }
 
 
+/*Queries Animales*/
+@media screen and (max-width:500px){
+   
+  .contodo{
+    background: rgb(226, 117, 208);
+    grid-template-columns: 1fr;
+   } 
   
+  .contodo .conmas{
+  
+    grid-column: 1/6;
+  
+  
+  }
+  .contodo .sidebari{
+    grid-column: 1/6;
+  }
+  
+  .contodo .post{
+    grid-column: 1/6;
+  }
+  
+  
+  }
+  
+  
+/*Queries Curiosidades*/
+@media screen and (max-width:500px){
+   
+  .contododos{
+    background: rgb(226, 117, 208);
+    grid-template-columns: 1fr;
+   } 
+  
+  .contododos .conmasdos{
+  
+    grid-column: 1/6;
+  
+  
+  }
+  .contododos .sidebaridos{
+    grid-column: 1/6;
+  }
+  
+  .contododos .postdos{
+    grid-column: 1/6;
+  }
+  
+  
+  }
 
+/*Queries Ciencia*/
+@media screen and (max-width:500px){
+   
+  .contodotres{
+    background: rgb(226, 117, 208);
+    grid-template-columns: 1fr;
+   } 
+  
+  .contodotres .conmastres{
+  
+    grid-column: 1/6;
+  
+  
+  }
+  .contodotres .sidebaritres{
+    grid-column: 1/6;
+  }
+  
+  .contodotres .posttres{
+    grid-column: 1/6;
+  }
+  
+  
+  }
 
 
    
