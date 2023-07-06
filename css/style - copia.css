@@ -461,7 +461,7 @@ align-items: center;
   .container{
     background:rgb(161, 93, 221) ;
     grid-template-columns: 1fr;
-   
+   width: 100%;
   }
   
   .container .content{
