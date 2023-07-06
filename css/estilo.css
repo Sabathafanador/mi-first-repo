@@ -1,0 +1,20 @@
+/* Error: compound selectors may no longer be extended.
+ * Consider `@extend .container, .title` instead.
+ * See https://sass-lang.com/d/extend-compound for details.
+ * 
+ *     ,
+ * 649 | @extend.container.title;
+ *     |        ^^^^^^^^^^^^^^^^
+ *     '
+ *   scss\estilo.scss 649:8  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: compound selectors may no longer be extended.\a Consider `@extend .container, .title` instead.\aSee https://sass-lang.com/d/extend-compound for details.\a\a     \2577 \a 649 \2502  @extend.container.title;\d\a     \2502         ^^^^^^^^^^^^^^^^\a     \2575 \a   scss\\estilo.scss 649:8  root stylesheet";
+}

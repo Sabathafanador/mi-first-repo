@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -6,13 +6,12 @@
   display: flex;
   align-items: center;
   margin-right: 10px;
+} 
+ body{
+    background: rgb(244, 229, 201);
 }
-body{
-    background: white;
 
-  }
-
-.title h1{
+/* .title h1{
     padding: 20px 0;
     text-align: center;
     font-size: 2.9em;
@@ -20,12 +19,12 @@ body{
 
 }
 
-.naver{padding: 20px 0;
+.navar{padding: 50px 0;
     text-align: center;
     font-size: 1em;
     align-content: center;
-}
-nav ul{
+} */ */
+/* nav ul{
    background-color: rgb(96, 95, 96);
    width: 100%;
    list-style-type: none;
@@ -37,7 +36,7 @@ display: inline-flex;
 }
 nav a{
     text-decoration: none;
-    color: white;
+    color: azure;
     padding: 10px;
     width: 100%;   
 }
@@ -45,17 +44,12 @@ nav li:hover{
     background-color: black;
 
 }
-
+ */
 
 /*Periquitos para animales*/
 
-
-
-
-
-
-/* GRIDS index*/
-.container{
+/*Grids index*/
+/* .container{
 background: rgb(227, 219, 219);
 width: 90%;
 max-width: 1000px;
@@ -65,7 +59,7 @@ gap: 1.6em;
 grid-template-columns: repeat(5,1fr);
 }
 
-.container> .header,
+.container>.header,
 .container> .content,
 .container> .sidebar,
 .container> .footer,
@@ -131,45 +125,61 @@ align-items: center;
  justify-content: center;
    }
 
- /*GRIDS animales */
-.contodo{
-  background: rgb(92, 75, 111);
-  width: 90%;
-  max-width: 1000px;
-  margin: 1.6em auto;
-  display: grid;
-  gap: 1.6em;
-  grid-template-columns: repeat(5,1fr);
-  }
+
+
+
+
+
+ 
+
+/*GRIDS animales */
+/* .contodo{
+    background: rgb(92, 75, 111);
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5,1fr);
+    }
     
     .contodo> .tema,
     .contodo> .conmas,
     .contodo> .sidebari,
     .contodo> .fultimo,
-    .contodo>    
-    .contodo .tema{
-    display: grid;
-    grid-column: 1/6;
-    
-        background-color: grey;
-        color: black;
+    .contodo> div
+    {
+        background: wheat;
+        padding: 20px;
+        border: 1px solid rgba(52, 5, 2, 0.356);
     }
-      .fultimo{
-        display: grid;
-        grid-column: 1/6;
-        background-color: grey;
-        color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-         
-      }  
     
+    .contodo .tema{
+      display: grid;
+      grid-column: 1/6;
+      
+          background-color: grey;
+          color: black;
+      }
+        .fultimo{
+          display: grid;
+          grid-column: 1/6;
+          background-color: grey;
+          color: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+           
+        }  
+      
     .contodo .conmas{
        
        display: grid; 
        grid-column: span 3;
     }
+
+
+
     .contodo .sidebari{
         grid-column: span 2;
       color: black;
@@ -203,10 +213,10 @@ align-items: center;
      justify-content: center;
        }
       
-
+ */
 /*GRIDS Viajes*/
 
-.contodouno{
+/* .contodouno{
   background: rgb(92, 75, 111);
   width: 90%;
   max-width: 1000px;
@@ -286,7 +296,7 @@ align-items: center;
     
 
 /*GRIDS Ciencia */
-.contodotres{
+/* .contodotres{
   background: rgb(92, 75, 111);
   width: 90%;
   max-width: 1000px;
@@ -296,11 +306,11 @@ align-items: center;
   grid-template-columns: repeat(5,1fr);
   }
   
-  .contodotres> .tematres,
-  .contodotres> .conmastres,
-  .contodotres> .sidebaritres,
-  .contodotres> .fultimotres,
-  .contodotres> div
+  .tematres,
+  .conmastres,
+  .sidebaritres,
+  .fultimotres,
+  div
   {
       background: wheat;
       padding: 20px;
@@ -376,7 +386,7 @@ align-items: center;
   grid-template-columns: repeat(5,1fr);
   }
   
-  .contododos> .temados,
+  .contododos  .temados,
   .contododos> .conmasdos,
   .contododos> .sidebaridos,
   .contododos> .fultimodos,
@@ -398,7 +408,7 @@ align-items: center;
       display: grid;
       grid-column: 1/6;
       background-color: grey;
-      color: black-----;
+      color: black;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -534,8 +544,7 @@ align-items: center;
   .contododos .conmasdos{
   
     grid-column: 1/6;
-  
-  
+
   }
   .contododos .sidebaridos{
     grid-column: 1/6;
@@ -553,13 +562,12 @@ align-items: center;
    
   .contodotres{
     background: rgb(226, 117, 208);
-    grid-template-columns: 1fr;
-   } 
+    grid-template-columns:1fr
+  }
   
   .contodotres .conmastres{
   
     grid-column: 1/6;
-  
   
   }
   .contodotres .sidebaritres{
@@ -569,10 +577,7 @@ align-items: center;
   .contodotres .posttres{
     grid-column: 1/6;
   }
-  
-  
-  }
-
+}
 
    
   
