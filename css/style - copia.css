@@ -132,20 +132,20 @@ align-items: center;
 
  
 
-/*GRIDS animales */
-/* .contodo{
+GRIDS animales */
+.contodo{
     background: rgb(92, 75, 111);
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: (1Fr);
     }
-    
+
+    .contodo> .post 
     .contodo> .tema,
     .contodo> .conmas,
-    .contodo> .sidebari,
     .contodo> .fultimo,
     .contodo> div
     {
@@ -169,7 +169,7 @@ align-items: center;
           display: flex;
           align-items: center;
           justify-content: center;
-           
+           padding: 30px;
         }  
       
     .contodo .conmas{
@@ -178,17 +178,6 @@ align-items: center;
        grid-column: span 3;
     }
 
-
-
-    .contodo .sidebari{
-        grid-column: span 2;
-      color: black;
-        background-color: rgb(212, 144, 242);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-    }
     
     .contodo .info{
     background-color: cadetblue;
@@ -213,7 +202,7 @@ align-items: center;
      justify-content: center;
        }
       
- */
+
 /*GRIDS Viajes*/
 
 /* .contodouno{
@@ -461,7 +450,7 @@ align-items: center;
   .container{
     background:rgb(161, 93, 221) ;
     grid-template-columns: 1fr;
-   
+    
   }
   
   .container .content{
