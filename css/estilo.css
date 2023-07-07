@@ -1,20 +1,495 @@
-/* Error: compound selectors may no longer be extended.
- * Consider `@extend .container, .title` instead.
- * See https://sass-lang.com/d/extend-compound for details.
- * 
- *     ,
- * 649 | @extend.container.title;
- *     |        ^^^^^^^^^^^^^^^^
- *     '
- *   scss\estilo.scss 649:8  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: compound selectors may no longer be extended.\a Consider `@extend .container, .title` instead.\aSee https://sass-lang.com/d/extend-compound for details.\a\a     \2577 \a 649 \2502  @extend.container.title;\d\a     \2502         ^^^^^^^^^^^^^^^^\a     \2575 \a   scss\\estilo.scss 649:8  root stylesheet";
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+body {
+  background: rgb(53, 50, 53);
+}
+
+.title h1, .footer h1 {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2.9em;
+  align-content: center;
+  background-color: cadetblue;
+}
+
+.navar {
+  padding: 50px 0;
+  text-align: center;
+  font-size: 1em;
+  align-content: center;
+}
+
+header h1 {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2.9em;
+  align-content: center;
+  background-color: cadetblue;
+}
+header nav ul {
+  background-color: rgb(100, 116, 55);
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+header nav ul li {
+  display: inline-flex;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+header nav ul li a:hover {
+  background-color: white;
+}
+
+/*Grids index*/
+.container {
+  background: rgb(227, 219, 219);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+.container .header,
+.container .content,
+.container .sidebar,
+.container .footer,
+.container div {
+  background: wheat;
+  padding: 20px;
+  border: 1px solid rgba(52, 5, 2, 0.356);
+}
+.container .title, .container .footer {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+}
+.container .footer {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .content {
+  display: grid;
+  grid-column: span 3;
+}
+.container .sidebar {
+  grid-column: span 2;
+  color: black;
+  background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content .article {
+  background-color: cadetblue;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+}
+.content .article p {
+  padding: 10px;
+}
+.content .article h2 {
+  padding: 10px;
+}
+
+.another {
+  background: violet;
+  color: black;
+  height: 180px;
+  display: grid;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  justify-content: center;
+}
+
+/*ANIMALESSSSSSSSSSSSSSSSSSSSSS*/
+/*GRIDS animales */
+.contodo {
+  background: rgb(92, 75, 111);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: 1fr;
+  background: wheat;
+  padding: 20px;
+  border: 1px solid rgba(52, 5, 2, 0.356);
+}
+.contodo .tema,
+.contodo .post,
+.contodo .conmas,
+.contodo .fultimo,
+.contodo div {
+  background: wheat;
+  padding: 20px;
+  border: 1px solid rgba(52, 5, 2, 0.356);
+}
+.contodo .tema {
+  display: grid;
+  grid-column: 1/3;
+  background-color: grey;
+  color: black;
+}
+.contodo .fultimo {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.contodo .conmas {
+  display: grid;
+  grid-column: span 3;
+}
+.contodo .info {
+  background-color: cadetblue;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+}
+.contodo .post {
+  background: violet;
+  color: black;
+  height: 180px;
+  display: grid;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  justify-content: center;
+}
+
+.conmas .info p {
+  padding: 10px;
+}
+.conmas .info h2 {
+  padding: 10px;
+}
+
+/*GRIDS Ciencia */
+.contodotres {
+  background: rgb(92, 75, 111);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+.contodotres .contodotres > .tematres,
+.contodotres .contodotres > .conmastres,
+.contodotres .contodotres > .sidebaritres,
+.contodotres .contodotres > .fultimotres,
+.contodotres .contodotres > div {
+  background: wheat;
+  padding: 20px;
+  border: 1px solid rgba(52, 5, 2, 0.356);
+}
+.contodotres .tematres {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+}
+.contodotres .fultimotres {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contodotres .conmastres {
+  display: grid;
+  grid-column: span 3;
+}
+.contodotres .conmastres .infotres {
+  background-color: cadetblue;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+}
+.contodotres .conmastres .infotres p {
+  padding: 10px;
+}
+.contodotres .conmastres .infotres h2 {
+  padding: 10px;
+}
+.contodotres .conmastres .sidebaritres {
+  grid-column: span 2;
+  color: black;
+  background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contodotres .posttres {
+  background: violet;
+  color: black;
+  height: 180px;
+  display: grid;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  justify-content: center;
+}
+
+/*GRIDS Curiosidades */
+.contododos {
+  background: rgb(92, 75, 111);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+.contododos .temados,
+.contododos .conmasdos,
+.contododos .sidebaridos,
+.contododos .fultimodos,
+.contododos div {
+  background: wheat;
+  padding: 20px;
+  border: 1px solid rgba(52, 5, 2, 0.356);
+}
+.contododos .temados {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+}
+.contododos .fultimodos {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contododos .conmasdos {
+  display: grid;
+  grid-column: span 3;
+}
+.contododos .sidebaridos {
+  grid-column: span 2;
+  color: black;
+  background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contododos .infodos {
+  background-color: cadetblue;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+}
+.contododos .infodos p {
+  padding: 10px;
+}
+.contododos .infodos h2 {
+  padding: 10px;
+}
+.contododos .postdos {
+  background: violet;
+  color: black;
+  height: 180px;
+  display: grid;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  justify-content: center;
+}
+
+/*GRIDS Viajes*/
+.contodouno {
+  background: rgb(92, 75, 111);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+.contodouno .temauno,
+.contodouno .conmasuno,
+.contodouno .sidebariuno,
+.contodouno .fultimouno,
+.contodouno div {
+  background: wheat;
+  padding: 20px;
+  border: 1px solid rgba(52, 5, 2, 0.356);
+}
+.contodouno .temauno {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+}
+.contodouno .fultimouno {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contodouno .conmasuno {
+  display: grid;
+  grid-column: span 3;
+}
+.contodouno .sidebariuno {
+  grid-column: span 2;
+  color: black;
+  background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contodouno .infouno {
+  background-color: cadetblue;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+}
+.contodouno .postuno {
+  background: violet;
+  color: black;
+  height: 180px;
+  display: grid;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  justify-content: center;
+}
+
+.conmasuno .infouno h2 {
+  padding: 10px;
+}
+.conmasuno .infouno p {
+  padding: 10px;
+}
+
+/*Queries Index */
+@media screen and (max-width: 500px) {
+  .container {
+    background: rgb(161, 93, 221);
+    grid-template-columns: 1fr;
+  }
+  .container .content {
+    grid-column: 1/6;
+  }
+  .container .sidebar {
+    grid-column: 1/6;
+  }
+  .container .another {
+    grid-column: 1/6;
+  }
+}
+/*Queries Viajes */
+@media screen and (max-width: 500px) {
+  .contodouno {
+    background: rgb(226, 117, 208);
+    grid-template-columns: 1fr;
+  }
+  .contodouno .conmasuno {
+    grid-column: 1/6;
+  }
+  .contodouno .sidebariuno {
+    grid-column: 1/6;
+  }
+  .contodouno .anexouno {
+    grid-column: 1/6;
+  }
+}
+/*Queries Animales*/
+@media screen and (max-width: 500px) {
+  .contodo {
+    background: rgb(226, 117, 208);
+    grid-template-columns: 1fr;
+  }
+  .contodo .conmas {
+    grid-column: 1/6;
+  }
+  .contodo .post {
+    grid-column: 1/6;
+  }
+}
+/*Queries Curiosidades*/
+@media screen and (max-width: 500px) {
+  .contododos {
+    background: rgb(226, 117, 208);
+    grid-template-columns: 1fr;
+  }
+  .contododos .conmasdos {
+    grid-column: 1/6;
+  }
+  .contododos .sidebaridos {
+    grid-column: 1/6;
+  }
+  .contododos .postdos {
+    grid-column: 1/6;
+  }
+}
+/*Queries Ciencia*/
+@media screen and (max-width: 500px) {
+  .contodotres {
+    background: rgb(226, 117, 208);
+    grid-template-columns: 1fr;
+  }
+  .contodotres .conmastres {
+    grid-column: 1/6;
+  }
+  .contodotres .sidebaritres {
+    grid-column: 1/6;
+  }
+  .contodotres .posttres {
+    grid-column: 1/6;
+  }
+}
+/*EXTEND*/
+.container, title {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=estilo.css.map */

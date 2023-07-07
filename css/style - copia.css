@@ -140,7 +140,7 @@ GRIDS animales */
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
-    grid-template-columns: (1Fr);
+    grid-template-columns: 1Fr;
     }
 
     .contodo> .post 
