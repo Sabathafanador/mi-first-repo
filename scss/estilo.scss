@@ -5,11 +5,6 @@
     margin: 0;
     padding: 0;
 }
-.logo{
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
 body{
     background: $colordos;
 }
@@ -64,7 +59,7 @@ header{
     max-width: 1000px;
     margin: 1.6em auto;
     display: grid;
-    gap: 1.6em;
+    grid-gap:   1.6em;
     grid-template-columns: repeat(5,1fr);
 
     .header,
@@ -162,7 +157,6 @@ header{
      border: 1px solid rgba(52, 5, 2, 0.356);
 
     .tema,
-    .post,
     .conmas,
     .fultimo,
     div
@@ -190,7 +184,7 @@ header{
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 30px;
+          padding: 20px;
            
         }  
         .conmas{
@@ -245,7 +239,7 @@ header{
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat (5, 1fr);
     .contodotres> .tematres,
     .contodotres> .conmastres,
     .contodotres> .sidebaritres,

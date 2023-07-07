@@ -4,12 +4,6 @@
   padding: 0;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
-}
-
 body {
   background: rgb(53, 50, 53);
 }
@@ -62,7 +56,7 @@ header nav ul li a:hover {
   max-width: 1000px;
   margin: 1.6em auto;
   display: grid;
-  gap: 1.6em;
+  grid-gap: 1.6em;
   grid-template-columns: repeat(5, 1fr);
 }
 .container .header,
@@ -141,7 +135,6 @@ header nav ul li a:hover {
   border: 1px solid rgba(52, 5, 2, 0.356);
 }
 .contodo .tema,
-.contodo .post,
 .contodo .conmas,
 .contodo .fultimo,
 .contodo div {
@@ -163,7 +156,7 @@ header nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 20px;
 }
 .contodo .conmas {
   display: grid;
@@ -201,7 +194,7 @@ header nav ul li a:hover {
   margin: 1.6em auto;
   display: grid;
   gap: 1.6em;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat 5, 1fr;
 }
 .contodotres .contodotres > .tematres,
 .contodotres .contodotres > .conmastres,
