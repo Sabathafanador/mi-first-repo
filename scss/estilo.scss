@@ -157,6 +157,7 @@ header{
      border: 1px solid rgba(52, 5, 2, 0.356);
 
     .tema,
+    .post
     .conmas,
     .fultimo,
     div
@@ -179,7 +180,7 @@ header{
 .fultimo{
           display: grid;
           grid-column: 1/6;
-          background-color: grey;
+          background-color: rgb(242, 234, 234);
           color: black;
           display: flex;
           align-items: center;
@@ -204,18 +205,31 @@ header{
             color: black;
             }
 
-
             .post{
-                background: violet;
-                color: black;
-                height: 180px;
-                display: grid;
-                display: flex;
-                align-items: center;
-                 background-color: grey;
-                 justify-content: center;
-                   }
-      }            
+              background: violet;
+              color: black;
+              height: 180px;
+              display: grid;
+              display: flex;
+              align-items: center;
+               background-color: grey;
+               justify-content: center;
+                 }
+           
+      }  
+      
+      .post{
+        background: violet;
+        color: black;
+        height: 180px;
+        display: grid;
+        display: flex;
+        align-items: center;
+         background-color: grey;
+         justify-content: center;
+           }
+
+
 .conmas{
     .info{
       p{

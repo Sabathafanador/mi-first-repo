@@ -135,7 +135,7 @@ header nav ul li a:hover {
   border: 1px solid rgba(52, 5, 2, 0.356);
 }
 .contodo .tema,
-.contodo .conmas,
+.contodo .post .conmas,
 .contodo .fultimo,
 .contodo div {
   background: wheat;
@@ -151,7 +151,7 @@ header nav ul li a:hover {
 .contodo .fultimo {
   display: grid;
   grid-column: 1/6;
-  background-color: grey;
+  background-color: rgb(242, 234, 234);
   color: black;
   display: flex;
   align-items: center;
@@ -169,6 +169,17 @@ header nav ul li a:hover {
   color: black;
 }
 .contodo .post {
+  background: violet;
+  color: black;
+  height: 180px;
+  display: grid;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  justify-content: center;
+}
+
+.post {
   background: violet;
   color: black;
   height: 180px;
