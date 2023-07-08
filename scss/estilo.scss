@@ -145,7 +145,7 @@ header{
 
 /*GRIDS animales */
 .contodo{
-    background: rgb(92, 75, 111);
+    background: rgb(164, 115, 237);
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
@@ -157,7 +157,7 @@ header{
      border: 1px solid rgba(52, 5, 2, 0.356);
 
     .tema,
-    .post
+    .post,
     .conmas,
     .fultimo,
     div
@@ -220,7 +220,7 @@ header{
       
       .post{
         background: violet;
-        color: black;
+        color: rgb(148, 10, 10);
         height: 180px;
         display: grid;
         display: flex;
