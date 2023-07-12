@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     background: $colordos;
 }
@@ -13,8 +14,8 @@ body{
     padding: 20px 0;
     text-align: center;
     font-size: 2.9em;
-    align-content: center;background-color: rgb(127, 231, 245);
-
+    align-content: center;background-color: rgb(0, 5, 5);
+color: white;
 }
 
 .navar{padding: 50px 0;
@@ -49,12 +50,54 @@ header{
         }
     }
 }
+.imagenuno{
+  width: 120%;
+  height: 100%;
+}
+
+.imagendos{
+  width: 120%;
+  height: 100%;
+}
+
+.imagentres{
+  width: 120%;
+  height: 100%;
+}
+
+.imagencuatro{
+  width: 120%;
+  height: 100%;
+}
+
+.imagencinco{
+  width: 120%;
+  height: 100%;
+}
+
+
+.homero{
+  width: 50%;
+  height: 40%;
+  }
+  .arepas{
+    width: 120%;
+    height: 120%;
+    }
+  
+    .jamon{
+      width: 120%;
+      height: 120%;
+      }
+
+
+
 
 /*Grids index*/
 
 
 .container{
-    background: rgb(227, 219, 219);
+    background: rgb(253, 252, 252);
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
@@ -67,22 +110,23 @@ header{
     .sidebar,
     .footer,
     div{
-        background: wheat;
-        padding: 20px;
+        background:rgb(5, 5, 5);
+         padding: 20px;
         border: 1px solid rgba(52, 5, 2, 0.356);
     }
 
     .title{
         display: grid;
         grid-column: 1/6;
+
         
             background-color: grey;
-            color: black;
+            color: rgb(253, 252, 252);
         }
           .footer{
             display: grid;
             grid-column: 1/6;
-            background-color: grey;
+            background-color: rgb(160, 76, 230);
             color: black;
             display: flex;
             align-items: center;
@@ -90,9 +134,9 @@ header{
              
           }  
           .content{
-   
+                    
             display: grid; 
-            grid-column: span 3;
+            grid-column: 1/6;
          }
 
          .sidebar{
@@ -111,10 +155,10 @@ header{
 .content {
 
 .article{
-    background-color: cadetblue;
+    background-color: rgb(6, 0, 0);
     padding: 20px;
     margin-top: 5px;
-    color: black;
+    color: white;
      p{
         padding: 10px;
         }
@@ -145,20 +189,19 @@ header{
 
 /*GRIDS animales */
 .contodo{
-    background: rgb(169, 239, 48);
+    background: rgba(82, 80, 105, 0.808);
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
-    grid-template-columns: 1fr;
+    grid-template-columns:  1fr;
     background: wheat;
     padding: 20px;
      border: 1px solid rgba(52, 5, 2, 0.356);
     
 
     .tema,
-    .post,
     .conmas,
     .fultimo,
     div
@@ -170,8 +213,8 @@ header{
 
      .tema{
         display: grid;
-        grid-column: 1/3;
-        
+        grid-column: 1/6;
+
             background-color: grey;
             color: black;
 
@@ -181,8 +224,8 @@ header{
 .fultimo{
           display: grid;
           grid-column: 1/6;
-          background-color: rgb(242, 234, 234);
-          color: black;
+          background-color: black;
+          color: white;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -192,44 +235,25 @@ header{
         .conmas{
        
             display: grid; 
-            grid-column: span 3;
-             
+            grid-column: span 5;
+            background-color: rgb(118, 116, 116); 
 
          }
 
          
 
         .info{
-            background-color: cadetblue;
+            background-color: black;
             padding: 20px;
             margin-top: 5px;
-            color: black;
+            color: rgb(247, 243, 243);
+            
             }
 
-            .post{
-              background: violet;
-              color: black;
-              height: 180px;
-              display: grid;
-              display: flex;
-              align-items: center;
-               background-color: grey;
-               justify-content: center;
-                 }
-           
+            
       }  
       
-      .post{
-        background: violet;
-        color: rgb(148, 10, 10);
-        height: 180px;
-        display: grid;
-        display: flex;
-        align-items: center;
-         background-color: grey;
-         justify-content: center;
-           }
-
+      
 
 .conmas{
     .info{
@@ -248,96 +272,57 @@ header{
 
 /*GRIDS Ciencia */
 .contodotres{
-    background: rgb(92, 75, 111);
+    background: rgb(2, 0, 4);
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
-    grid-template-columns: repeat (5, 1fr);
-    .contodotres> .tematres,
-    .contodotres> .conmastres,
-    .contodotres> .sidebaritres,
-    .contodotres> .fultimotres,
-    .contodotres> div
+    grid-template-columns: repeat (5,1fr);
+  
+    .conmastres,
+    
+    div
     {
-        background: wheat;
+        background: rgb(230, 13, 121);
         padding: 20px;
-        border: 1px solid rgba(52, 5, 2, 0.356);
+        border: 1px solid rgba(110, 148, 33, 0.356);
     }
-    .tematres{
-        display: grid;
-        grid-column: 1/6;
         
-            background-color: grey;
-            color: black;
-        }
-        .fultimotres{
-            display: grid;
-            grid-column: 1/6;
-            background-color: grey;
-            color: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-             
-          }  
           .conmastres{
      
             display: grid; 
-            grid-column: span 3;
-
-            .infotres{
-                background-color: cadetblue;
-                padding: 20px;
-                margin-top: 5px;
-                color: black;
-                p{
-                    padding: 10px;
-                    }
-    
-                    h2{
-                        padding: 10px;
-                        }
+            grid-column: span 5;
+color: white;
+            background-color: rgb(172, 173, 173);
+          .infotres{
+              background-color: black;
+              padding: 20px;
+              margin-top: 5px;
+              color: white;
+              }
          }
     
 
-         .sidebaritres{
-            grid-column: span 2;
-          color: black;
-            background-color: rgb(212, 144, 242);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         
-        }
 
             }
             
 
-            .posttres{
-                background: violet;
-                color: black;
-                height: 180px;
-                display: grid;
-                display: flex;
-                align-items: center;
-                 background-color: grey;
-                 justify-content: center;
+           
 
-}
 
-    }
+
 
 /*GRIDS Curiosidades */
 .contododos{
-    background: rgb(92, 75, 111);
+    background: rgb(101, 111, 75);
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
-    grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5,1fr);
 
 
     .temados,
@@ -346,7 +331,7 @@ header{
     .fultimodos,
      div
     {
-        background: wheat;
+        background: rgb(141, 140, 139);
         padding: 20px;
         border: 1px solid rgba(52, 5, 2, 0.356);
     }
@@ -360,8 +345,8 @@ header{
           .fultimodos{
             display: grid;
             grid-column: 1/6;
-            background-color: grey;
-            color: black;
+            background-color: black;
+            color: white;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -371,31 +356,26 @@ header{
           .conmasdos{
      
             display: grid; 
-            grid-column: span 3;
+            grid-column: span 5;
+            .infodos{
+              background-color: black;
+                          padding: 20px;
+              margin-top: 5px;
+              color: rgb(237, 234, 234);
+               p{
+                  padding: 10px;
+                  }
+                  h2{
+                      padding: 10px;
+                      } 
 
+                    
+                  
+                    
          }
 
-         .sidebaridos{
-            grid-column: span 2;
-          color: black;
-            background-color: rgb(212, 144, 242);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         
-        }
         
-        .infodos{
-            background-color: cadetblue;
-            padding: 20px;
-            margin-top: 5px;
-            color: black;
-             p{
-                padding: 10px;
-                }
-                h2{
-                    padding: 10px;
-                    }
 
 
 
@@ -417,7 +397,7 @@ header{
 /*GRIDS Viajes*/
 
 .contodouno{
-    background: rgb(92, 75, 111);
+    background: rgb(18, 6, 182);
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
@@ -486,7 +466,7 @@ header{
         .postuno{
             background: violet;
             color: black;
-            height: 180px;
+            height: 150px;
             display: grid;
             display: flex;
             align-items: center;
@@ -545,7 +525,7 @@ header{
 
   .sidebariuno{
     grid-column: 1/6;
-  }
+   }
 
 
 
