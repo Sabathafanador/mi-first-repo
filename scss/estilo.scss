@@ -335,17 +335,13 @@ transform: rotate(5deg);
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
-    grid-template-columns:  1fr;
+  grid-template-columns: 1fr;
 
+background-color: azure;
+        padding: 20px;
+         border: 1px solid rgba(52, 5, 2, 0.356);
 
-
-
- 
-    background: wheat;
-    padding: 20px;
-     border: 1px solid rgba(52, 5, 2, 0.356);
-    }
-
+}
     .tema,
     .conmas,
     .fultimo,
@@ -412,7 +408,6 @@ transform: rotate(5deg);
         }
 
     }
-
 
 
 
@@ -661,9 +656,15 @@ color: white;
 
 @media screen and (max-width:500px){
  .contodouno{
-  background: rgb(226, 117, 208);
+
+  background: rgb(92, 75, 111);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
   grid-template-columns: 1fr;
- 
+  
 }
   .conmasuno{
 
@@ -672,10 +673,14 @@ color: white;
 
   .sidebariuno{
 
-    grid-column: 1/6;
-    
-      }
-    
+    grid-column: 1;
+    color: black;
+  
+    background: rgb(226, 117, 208);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
   
 }
 
@@ -711,7 +716,9 @@ color: white;
 
 /*Queries Curiosidades*/
 @media screen and (max-width:500px){
-   
+   img{
+    width: 50%;
+   }
     .contododos{
       background: rgb(226, 117, 208);
       grid-template-columns: 1fr;
@@ -738,7 +745,9 @@ color: white;
   
 /*Queries Ciencia*/
 @media screen and (max-width:500px){
-   
+   img{
+    width: 50%;
+   }
     .contodotres{
       background: rgb(226, 117, 208);
       grid-template-columns: 1,span 3;
