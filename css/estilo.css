@@ -189,18 +189,22 @@ header nav ul li a:hover {
   height: 100%;
 }
 
+.animalesuno {
+  width: 50%;
+  height: 50%;
+}
+
 /*Grids index*/
 .container {
   background: rgb(253, 252, 252);
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: 1.6em auto;
   display: grid;
   grid-gap: 1.6em;
   grid-template-columns: repeat(5, 1fr);
 }
-.container .header,
-.container .content,
+.container .header .content,
 .container .sidebar,
 .container .footer,
 .container div {
@@ -211,12 +215,11 @@ header nav ul li a:hover {
 .container .title, .container .footer {
   display: grid;
   grid-column: 1/6;
-  background-color: grey;
+  background-color: rgb(67, 63, 88);
   color: rgb(253, 252, 252);
 }
 .container .footer {
   display: grid;
-  grid-column: 1/6;
   background-color: rgb(7, 0, 7);
   color: rgb(244, 12, 12);
   display: flex;
@@ -226,18 +229,16 @@ header nav ul li a:hover {
 .container .content {
   display: grid;
   grid-column: 1/6;
+  background-color: black;
 }
 .container .sidebar {
   grid-column: span 2;
   color: black;
-  background-color: rgb(212, 144, 242);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  background-color: rgb(49, 9, 228);
 }
 
 .content .article {
-  background-color: rgb(6, 0, 0);
+  background-color: rgb(180, 30, 30);
   padding: 20px;
   margin-top: 5px;
   color: white;
@@ -264,12 +265,12 @@ header nav ul li a:hover {
 /*GRIDS animales */
 .contodo {
   background: rgba(82, 80, 105, 0.808);
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: 1.6em auto;
   display: grid;
   gap: 1.6em;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(5, 1fr);
   background-color: azure;
   padding: 20px;
   border: 1px solid rgba(52, 5, 2, 0.356);
@@ -285,15 +286,12 @@ div {
 }
 
 .tema {
-  display: grid;
-  grid-column: 1/6;
   background-color: grey;
   color: black;
 }
 
 .fultimo {
   display: grid;
-  grid-column: 1/6;
   background-color: black;
   color: white;
   display: flex;
@@ -304,12 +302,11 @@ div {
 
 .conmas {
   display: grid;
-  grid-column: 1/6;
   background-color: rgb(118, 116, 116);
 }
 
 .info {
-  background-color: black;
+  background-color: rgb(7, 7, 7);
   padding: 20px;
   margin-top: 5px;
   color: rgb(247, 243, 243);
@@ -325,7 +322,7 @@ div {
 /*GRIDS Ciencia */
 .contodotres {
   background: rgb(2, 0, 4);
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: 1.6em auto;
   display: grid;
@@ -354,7 +351,7 @@ div {
 /*GRIDS Curiosidades */
 .contododos {
   background: rgb(101, 111, 75);
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: 1.6em auto;
   display: grid;
@@ -415,7 +412,7 @@ div {
 /*GRIDS Viajes*/
 .contodouno {
   background: rgb(18, 6, 182);
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: 1.6em auto;
   display: grid;
@@ -502,12 +499,12 @@ div {
 @media screen and (max-width: 500px) {
   .contodouno {
     background: rgb(92, 75, 111);
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
   .conmasuno {
     grid-column: 1/6;
@@ -520,7 +517,14 @@ div {
     align-items: center;
     flex-direction: column;
   }
+  .venezuela {
+    width: 50%;
+  }
 }
+.article {
+  width: 50%;
+}
+
 /*Queries Animales*/
 @media screen and (max-width: 500px) {
   .contodo {
@@ -561,18 +565,26 @@ div {
   img {
     width: 50%;
   }
+  .infotres {
+    margin-top: auto;
+  }
   .contodotres {
-    background: rgb(226, 117, 208);
-    grid-template-columns: 1, span 3;
+    background: rgb(92, 75, 111);
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
   }
   .contodotres .conmastres {
-    grid-column: 1/3, 1fr;
+    grid-column: 1.6;
   }
   .contodotres .sidebaritres {
-    grid-column: 1/3, 1fr;
+    grid-column: 1.6;
   }
   .contodotres .posttres {
-    grid-column: 1/3;
+    grid-column: 1/6;
   }
 }
 /*EXTEND*/
