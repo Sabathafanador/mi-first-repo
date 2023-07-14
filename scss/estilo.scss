@@ -139,7 +139,6 @@ header{
   width: 50%;
   height: 5%0%;
  
-}
 .homero{
 
   width: 300px;
@@ -177,8 +176,8 @@ transform: rotate(5deg);
 
 /*viajes*/
 .destinos{
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   
   margin: 0 auto;
   display: block;
@@ -269,13 +268,10 @@ transform: rotate(5deg);
             color: rgb(253, 252, 252);
         }
 
-
-
-
         
           .footer{
           display: grid;
-           
+           grid-column: 1/6;;
             background-color: rgb(7, 0, 7);
             color: rgb(244, 12, 12);
             display: flex;
@@ -309,7 +305,8 @@ transform: rotate(5deg);
     padding: 20px;
     margin-top: 5px;
     color: white;
- 
+    
+ }
 
      p{
         padding: 10px;
@@ -347,7 +344,7 @@ transform: rotate(5deg);
     margin: 1.6em auto;
     display: grid;
     gap: 1.6em;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns:  repeat(5,1fr);
 
 background-color: azure;
         padding: 20px;
@@ -549,7 +546,7 @@ color: white;
 
 .contodouno{
     background: rgb(18, 6, 182);
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
     display: grid;
@@ -642,11 +639,11 @@ color: white;
 @media screen and (max-width:500px){
     .container{
       background:rgb(161, 93, 221) ;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(5,1fr);
      
       .content{
         grid-column: 1/5 ,1fr;
-        
+        }
         .sidebar{
           grid-column: 1/5;
         }
@@ -659,8 +656,6 @@ color: white;
               }
     }
     
-  
-  }
 
 /*Queries Viajes */
 
@@ -691,14 +686,9 @@ color: white;
     align-items: center;
     flex-direction: column;
     }
-  .venezuela{
-    width: 50%;
   }
-}
 
-.article{
-  width: 50%;
-}
+
 
 
 /*Queries Animales*/
