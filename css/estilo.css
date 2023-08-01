@@ -113,8 +113,8 @@ header nav ul li a:hover {
 }
 
 .plantita {
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 40%;
 }
 
 .cerebro {
@@ -125,22 +125,36 @@ header nav ul li a:hover {
 .enamorados {
   width: 50%;
   height: 5% 0%;
-  /*viajes*/
-  /*Grids index*/
 }
-.enamorados .homero {
+
+.mamuts {
+  width: 300px;
+  height: 300px;
+}
+
+.fresas {
+  width: 300px;
+  height: 300px;
+}
+
+.cafeina {
+  width: 300px;
+  height: 300px;
+}
+
+.homerito {
   width: 300px;
   margin: 0 auto;
   display: block;
-  animation: homero 5s infinite;
+  animation: homerito 5s infinite;
 }
-@keyframes homero {
+
+@keyframes homerito {
   0% {
     transform: translateY(-50px);
   }
   30% {
-    transform: translateY(0);
-    rotate: 5deg;
+    transform: translateY(0) rotate(5deg);
   }
   50% {
     transform: rotate(-5deg);
@@ -149,16 +163,17 @@ header nav ul li a:hover {
     transform: rotate(5deg);
   }
   100% {
-    transform: translateY(-50px);
+    transform: translateY(50px);
   }
 }
-.enamorados .destinos {
-  width: 50%;
-  height: 50%;
+/*viajes*/
+.destinos {
+  width: 300px;
+  height: 200;
   margin: 0 auto;
-  display: block;
-  animation: homero 5s infinite;
+  animation: destinos 5s infinite;
 }
+
 @keyframes destinos {
   0% {
     transform: translateY(-50px);
@@ -177,70 +192,73 @@ header nav ul li a:hover {
     transform: translateY(-50px);
   }
 }
-.enamorados .peru {
-  width: 90%;
-  height: 20%;
+.textoviajes {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
 }
-.enamorados .viajarmas {
-  width: 100%;
-  height: 100%;
-}
-.enamorados .animalesuno {
+
+.animalesuno {
   width: 50%;
   height: 50%;
 }
-.enamorados .container {
-  background: rgb(253, 252, 252);
-  width: 100%;
+
+/*Grids index*/
+.container {
+  background: rgb(219, 202, 202);
+  width: 90%;
   max-width: 1000px;
   margin: 1.6em auto;
   display: grid;
-  grid-gap: 1.6em;
+  gap: 1.6em;
   grid-template-columns: repeat(5, 1fr);
 }
-.enamorados .container .header .content,
-.enamorados .container .sidebar,
-.enamorados .container .footer,
-.enamorados .container div {
-  background: rgb(5, 5, 5);
+.container .title, .container .footer {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: rgb(249, 244, 244);
+}
+
+.header,
+.content,
+.sidebar,
+.footer,
+div {
+  background: rgb(237, 217, 217);
   padding: 20px;
   border: 1px solid rgba(52, 5, 2, 0.356);
 }
-.enamorados .container .title, .enamorados .container .footer {
+
+.footer {
   display: grid;
   grid-column: 1/6;
-  background-color: rgb(67, 63, 88);
-  color: rgb(253, 252, 252);
-}
-.enamorados .container .footer {
-  display: grid;
-  grid-column: 1/6;
-  background-color: rgb(7, 0, 7);
-  color: rgb(244, 12, 12);
+  background-color: rgb(237, 9, 9);
+  color: rgb(244, 243, 243);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.enamorados .container .content {
+
+.content {
   display: grid;
-  grid-column: 1/6;
-  background-color: black;
+  grid-column: span 3;
 }
-.enamorados .container .sidebar {
+.content .sidebar {
   grid-column: span 2;
   color: black;
-  background-color: rgb(49, 9, 228);
+  background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.enamorados .content .article {
-  background-color: rgb(180, 30, 30);
+.content .article {
+  background-color: rgb(0, 4, 4);
   padding: 20px;
   margin-top: 5px;
-  color: white;
+  color: rgba(250, 247, 247, 0.256);
 }
-.enamorados .content p {
-  padding: 10px;
-}
-.enamorados .content h2 {
+.content .article h1,
+.content .article p {
   padding: 10px;
 }
 
@@ -256,63 +274,17 @@ header nav ul li a:hover {
 }
 
 /*ANIMALESSSSSSSSSSSSSSSSSSSSSS*/
-/*GRIDS animales */
-.contodo {
-  background: rgba(82, 80, 105, 0.808);
-  width: 100%;
-  max-width: 1000px;
-  margin: 1.6em auto;
-  display: grid;
-  gap: 1.6em;
-  grid-template-columns: repeat(5, 1fr);
-  background-color: azure;
-  padding: 20px;
-  border: 1px solid rgba(52, 5, 2, 0.356);
-}
-
-.tema,
-.conmas,
-.fultimo,
-div {
-  background: wheat;
-  padding: 20px;
-  border: 1px solid rgba(52, 5, 2, 0.356);
-}
-
-.tema {
-  background-color: grey;
+.animales {
+  background-image: url(../image/jirafa.jpg);
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: black;
+  text-decoration: none;
+  text-align: center;
 }
 
-.fultimo {
-  display: grid;
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.conmas {
-  display: grid;
-  background-color: rgb(118, 116, 116);
-}
-
-.info {
-  background-color: rgb(7, 7, 7);
-  padding: 20px;
-  margin-top: 5px;
-  color: rgb(247, 243, 243);
-}
-
-.conmas .info p {
-  padding: 10px;
-}
-.conmas .info h2 {
-  padding: 10px;
-}
-
+/*GRIDS animales */
 /*GRIDS Ciencia */
 .contodotres {
   background: rgb(2, 0, 4);
@@ -345,7 +317,7 @@ div {
 /*GRIDS Curiosidades */
 .contododos {
   background: rgb(101, 111, 75);
-  width: 100%;
+  width: 90%;
   max-width: 1000px;
   margin: 1.6em auto;
   display: grid;
@@ -375,10 +347,6 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.contododos .conmasdos {
-  display: grid;
-  grid-column: span 5;
 }
 .contododos .conmasdos .infodos {
   background-color: black;
