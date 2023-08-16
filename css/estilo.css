@@ -275,14 +275,35 @@ div {
 
 /*ANIMALESSSSSSSSSSSSSSSSSSSSSS*/
 .animales {
-  background-image: url(../image/jirafa.jpg);
+  background-image: url(../image/clara.webp);
   padding: 0;
   margin: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(4, 4, 4);
   text-decoration: none;
   text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  }
+
+  .nueva{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .letras{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(3, 0, 0);
+  }
+
+.sopa{
+  width: 500px;
+  height: 600px;
+
 }
+
 
 /*GRIDS animales */
 /*GRIDS Ciencia */
