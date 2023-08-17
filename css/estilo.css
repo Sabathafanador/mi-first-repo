@@ -284,7 +284,8 @@ div {
   text-align: center;
   background-attachment: fixed;
   background-size: cover;
-  
+  display: flex;
+  margin: 60px;
   }
 
   .nueva{
@@ -343,7 +344,7 @@ div {
   margin: 1.6em auto;
   display: grid;
   gap: 1.6em;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5,1fr);
 }
 .contododos .temados,
 .contododos .conmasdos,
