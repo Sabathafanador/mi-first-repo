@@ -1,9 +1,17 @@
-//Extend
-
-
-
-
-
-
-
 //Mixins
+@mixin textos ($color) {
+
+    color: aliceblue;
+  
+  }
+  
+  h1{
+    @include textos;
+  }
+
+
+
+
+
+
+

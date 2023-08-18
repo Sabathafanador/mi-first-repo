@@ -423,7 +423,7 @@ color: rgb(0, 5, 8);
      
             display: grid; 
             grid-column: span 5;
-color: white;
+            color: white;
             background-color: rgb(172, 173, 173);
           .infotres{
               background-color: black;
@@ -461,7 +461,7 @@ color: white;
   .fultimodos,
   div
   {
-      background: wheat;
+      background: rgb(10, 10, 10);
       padding: 20px;
       border: 1px solid rgba(52, 5, 2, 0.356);
   }
@@ -504,7 +504,7 @@ color: white;
   }
 
   .infodos{
-      background-color: cadetblue;
+      background-color: rgb(126, 124, 123);
       padding: 20px;
       margin-top: 5px;
       color: black;
@@ -660,6 +660,10 @@ color: white;
 @media screen and (max-width:500px)
 
 {
+  .viajesun{
+    width: 200px;
+    height: 200px;
+  }
   .peruzo{
     width: 300px;
     height: 300px;
@@ -751,8 +755,130 @@ color: white;
      } 
     
     }
-   
+
+    /*TABLET*/
+
+
+  /*Queries Index */
+
+@media screen and (max-width:768px){
+  
+  .container{
+      background:rgb(161, 93, 221) ;
+      grid-template-columns: repeat(5,1fr);
+     
+      .content{
+        grid-column: 1/5 ,1fr;
+        }
+        .sidebar{
+          grid-column: 1/5;
+        }
+
+
+        }
+
+              .another{
+                grid-column: 1/5,1fr;
+              }
+    }
     
+ 
+    
+
+/*QV*/
+@media screen and (max-width:768px)
+
+{
+  .peruzo{
+    width: 300px;
+    height: 300px;
+  }
+  .viajarmas{
+   width: 300px;
+   height: 300px;
+  }
+.textoviajes{
+  font-size: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+   .contodouno{
+     background: rgb(226, 117, 208);
+     grid-template-columns: repeat(5,1fr);
+
+     .conmasuno{
+      grid-column: 1/6 ;
+      justify-content: center;
+      
+     
+     }
+
+     .sidebaruno{
+       grid-column: 1fr;
+     }
+
+     .postuno{
+       grid-column: 1fr;
+     }
+
+
+    } 
+   
+   }
+
+/*Queries Curiosidades*/
+
+@media screen and (max-width:768){
+  img{
+   width: 50%;
+  }
+
+  
+   .contododos{
+     background: rgb(226, 117, 208);
+     grid-template-columns: 1/6;
+}
+     .conmasdos{
+   
+       grid-column: 1/6;
+     
+     }
+
+
+     .sidebaridos{
+       grid-column: 1fr;
+     }
+
+     .postdos{
+       grid-column: 1fr;
+     }
+
+
+    } 
+   
+   
+ 
+/*Queries Ciencia*/
+@media screen and (max-width:768px){
+ .ciencia{
+   width: 100%;
+  }
+
+  
+   .contodotres{
+     background: rgb(226, 117, 208);
+     grid-template-columns: 1/6;
+
+     .conmastres{
+   
+       grid-column: 1/6;
+     
+     }
+
+    } 
+   
+   }
+
+
   
     /*EXTEND*/
 
@@ -770,3 +896,6 @@ display:flex;
 align-items:center;
 justify-content:center;
     }
+
+
+
