@@ -33,7 +33,7 @@ header h1 {
   background-color: cadetblue;
 }
 header nav ul {
-  background-color: rgb(106, 20, 90);
+  background-color: rgb(84, 45, 75);
   width: 100%;
   list-style-type: none;
   text-align: center;
@@ -166,10 +166,25 @@ header nav ul li a:hover {
     transform: translateY(50px);
   }
 }
+/*animales*/
+.peligro {
+  font-size: 30px;
+  background-color: bisque;
+  padding: 5px;
+}
+
+.aqui {
+  background-image: url("../image/67ea9b023881596e6f178b795623fd0cbebe.jpg");
+  background-position: center center;
+}
+
+.color {
+  background-color: black;
+}
+
 /*viajes*/
 .destinos {
   width: 300px;
-  height: 200;
   margin: 0 auto;
   animation: destinos 5s infinite;
 }
@@ -194,7 +209,8 @@ header nav ul li a:hover {
 }
 .textoviajes {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
+  font-size: 10px;
+  color: rgb(0, 5, 8);
 }
 
 .animalesuno {
@@ -274,37 +290,24 @@ div {
 }
 
 /*ANIMALESSSSSSSSSSSSSSSSSSSSSS*/
-.animales {
-  background-image: url(../image/clara.webp);
+.animal {
   padding: 0;
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(4, 4, 4);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
   text-decoration: none;
   text-align: center;
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-  margin: 60px;
-  }
-
-  .nueva{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-  }
-
-  .letras{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(3, 0, 0);
-  }
-
-.sopa{
-  width: 500px;
-  height: 600px;
-
 }
 
+.mundo {
+  border-radius: 30px;
+  width: 300px;
+  height: 300px;
+}
+
+.tema {
+  background-image: url(../image/67ea9b023881596e6f178b795623fd0cbebe.jpg);
+}
 
 /*GRIDS animales */
 /*GRIDS Ciencia */
@@ -338,20 +341,20 @@ div {
 
 /*GRIDS Curiosidades */
 .contododos {
-  background: rgb(101, 111, 75);
+  background: rgb(18, 6, 182);
   width: 90%;
   max-width: 1000px;
   margin: 1.6em auto;
   display: grid;
   gap: 1.6em;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 .contododos .temados,
 .contododos .conmasdos,
 .contododos .sidebaridos,
 .contododos .fultimodos,
 .contododos div {
-  background: rgb(141, 140, 139);
+  background: wheat;
   padding: 20px;
   border: 1px solid rgba(52, 5, 2, 0.356);
 }
@@ -364,33 +367,46 @@ div {
 .contododos .fultimodos {
   display: grid;
   grid-column: 1/6;
-  background-color: black;
-  color: white;
+  background-color: grey;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contododos .conmasdos .infodos {
-  background-color: black;
+.contododos .conmasdos {
+  display: grid;
+  grid-column: span 5;
+}
+.contododos .sidebaridos {
+  grid-column: span 2;
+  color: black;
+  background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contododos .infodos {
+  background-color: cadetblue;
   padding: 20px;
   margin-top: 5px;
-  color: rgb(237, 234, 234);
-}
-.contododos .conmasdos .infodos p {
-  padding: 10px;
-}
-.contododos .conmasdos .infodos h2 {
-  padding: 10px;
+  color: black;
 }
 .contododos .postdos {
   background: violet;
   color: black;
-  height: 180px;
+  height: 150px;
   display: grid;
   display: flex;
   align-items: center;
   background-color: grey;
   justify-content: center;
+}
+
+.conmasdos .infodos h2 {
+  padding: 10px;
+}
+.conmasdos .infodos p {
+  padding: 10px;
 }
 
 /*GRIDS Viajes*/
@@ -431,7 +447,7 @@ div {
   display: grid;
   grid-column: span 3;
 }
-.contodouno .sidebariuno {
+.contodouno .conmasuno .sidebariuno {
   grid-column: span 2;
   color: black;
   background-color: rgb(212, 144, 242);
@@ -439,13 +455,13 @@ div {
   align-items: center;
   flex-direction: column;
 }
-.contodouno .infouno {
+.contodouno .conmasuno .infouno {
   background-color: cadetblue;
   padding: 20px;
   margin-top: 5px;
   color: black;
 }
-.contodouno .postuno {
+.contodouno .conmasuno .postuno {
   background: violet;
   color: black;
   height: 150px;
@@ -455,11 +471,10 @@ div {
   background-color: grey;
   justify-content: center;
 }
-
-.conmasuno .infouno h2 {
+.contodouno .conmasuno .infouno h2 {
   padding: 10px;
 }
-.conmasuno .infouno p {
+.contodouno .conmasuno .infouno p {
   padding: 10px;
 }
 
@@ -481,41 +496,31 @@ div {
 }
 /*Queries Viajes */
 @media screen and (max-width: 500px) {
+  .peruzo {
+    width: 300px;
+    height: 300px;
+  }
+  .viajarmas {
+    width: 300px;
+    height: 300px;
+  }
+  .textoviajes {
+    font-size: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
   .contodouno {
-    background: rgb(92, 75, 111);
-    width: 100%;
-    max-width: 1000px;
-    margin: 1.6em auto;
-    display: grid;
-    gap: 1.6em;
+    background: rgb(226, 117, 208);
     grid-template-columns: repeat(5, 1fr);
   }
-  .conmasuno {
+  .contodouno .conmasuno {
     grid-column: 1/6;
+    justify-content: center;
   }
-  .sidebariuno {
-    grid-column: 1;
-    color: black;
-    background: rgb(226, 117, 208);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  .contodouno .sidebaruno {
+    grid-column: 1fr;
   }
-}
-/*Queries Animales*/
-@media screen and (max-width: 500px) {
-  .contodo {
-    background: rgb(226, 117, 208);
-    grid-template-rows: 1fr;
-  }
-  .contodo .conmas {
-    grid-column: 1/6;
-  }
-  .contodo .fultimo {
-    grid-column: 1/6;
-  }
-  .contodo .info {
-    grid-column: 1/6;
+  .contodouno .postuno {
+    grid-column: 1fr;
   }
 }
 /*Queries Curiosidades*/
@@ -525,42 +530,28 @@ div {
   }
   .contododos {
     background: rgb(226, 117, 208);
-    grid-template-columns: 1fr;
+    grid-template-columns: 1/6;
   }
   .contododos .conmasdos {
     grid-column: 1/6;
   }
   .contododos .sidebaridos {
-    grid-column: 1/6;
+    grid-column: 1fr;
   }
   .contododos .postdos {
-    grid-column: 1/6;
+    grid-column: 1fr;
   }
 }
 /*Queries Ciencia*/
 @media screen and (max-width: 500px) {
-  img {
-    width: 50%;
-  }
-  .infotres {
-    margin-top: auto;
+  .ciencia {
+    width: 100%;
   }
   .contodotres {
-    background: rgb(92, 75, 111);
-    width: 100%;
-    max-width: 1000px;
-    margin: 1.6em auto;
-    display: grid;
-    gap: 1.6em;
-    grid-template-columns: repeat(5, 1fr);
+    background: rgb(226, 117, 208);
+    grid-template-columns: 1/6;
   }
   .contodotres .conmastres {
-    grid-column: 1.6;
-  }
-  .contodotres .sidebaritres {
-    grid-column: 1.6;
-  }
-  .contodotres .posttres {
     grid-column: 1/6;
   }
 }

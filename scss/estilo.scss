@@ -33,7 +33,7 @@ header{
   }
   nav{
       ul{
-          background-color: rgb(106, 20, 90);
+          background-color: rgb(84, 45, 75);
           width: 100%;
           list-style-type: none;
           text-align: center;
@@ -52,16 +52,6 @@ header{
       }
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -200,17 +190,29 @@ transform: rotate(-5deg);
  } 
   
   
+/*animales*/
 
+.peligro{
+  font-size: 30px;
+  background-color: bisque;
+  padding: 5px;
+}
 
+.aqui{
+  background-image: url("../image/67ea9b023881596e6f178b795623fd0cbebe.jpg");
+  background-position: center center;
 
+}
 
-
+.color{
+  background-color: black;
+}
 
 /*viajes*/
 .destinos{
  
   width: 300px;
-  height: 200;
+  
    margin: 0 auto;
   
   animation: destinos 5s infinite;
@@ -246,7 +248,8 @@ transform: rotate(5deg);
 
 .textoviajes{
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 12px;
+font-size: 10px;
+color: rgb(0, 5, 8);
 }
 
 
@@ -254,6 +257,12 @@ font-size: 12px;
   width: 50%;
   height: 50%;
 }
+
+
+
+
+
+
 
 
 
@@ -271,8 +280,6 @@ font-size: 12px;
   grid-template-columns: repeat(5,1fr);
 
 
-
-
   .title{
     display: grid;
     grid-column: 1/6;
@@ -281,9 +288,6 @@ font-size: 12px;
         color: rgb(249, 244, 244);
     }
     
-
-
-
   }
   .header,
   .content,
@@ -332,9 +336,6 @@ font-size: 12px;
   }
  }
 
-
-
-
  .another{
   background: violet;
   color: black;
@@ -350,8 +351,8 @@ font-size: 12px;
 
 /*ANIMALESSSSSSSSSSSSSSSSSSSSSS*/
 
-.animales{
-background-image: url(../image/jirafa.jpg);
+.animal{
+
 padding: 0;
 margin: 0;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -359,9 +360,15 @@ color: black;
 text-decoration: none;
 text-align: center;
 
-
-
-
+}
+.mundo{
+  
+  border-radius: 30px;
+  width: 300px;
+  height: 300px;
+}
+.tema{
+  background-image: url(../image/67ea9b023881596e6f178b795623fd0cbebe.jpg);
 }
 
 
@@ -415,78 +422,94 @@ color: white;
 
 /*GRIDS Curiosidades */
 .contododos{
-    background: rgb(101, 111, 75);
-    width: 90%;
-    max-width: 1000px;
-    margin: 1.6em auto;
-    display: grid;
-    gap: 1.6em;
+  background: rgb(18, 6, 182);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
   grid-template-columns: repeat(5,1fr);
 
-
-    .temados,
-    .conmasdos,
-    .sidebaridos,
-    .fultimodos,
-     div
-    {
-        background: rgb(141, 140, 139);
-        padding: 20px;
-        border: 1px solid rgba(52, 5, 2, 0.356);
-    }
-    .temados{
-        display: grid;
-        grid-column: 1/6;
-        
-            background-color: grey;
-            color: black;
-        }
-          .fultimodos{
-            display: grid;
-            grid-column: 1/6;
-            background-color: black;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-             
-          }  
-
-          .conmasdos{
-     
-            
-            .infodos{
-              background-color: black;
-               padding: 20px;
-              margin-top: 5px;
-              color: rgb(237, 234, 234);
-               p{
-                  padding: 10px;
-                  }
-                  h2{
-                      padding: 10px;
-                      } 
-
-                    
-                  
-                    
-         }
+  
+  .temados,
+  .conmasdos,
+  .sidebaridos,
+  .fultimodos,
+  div
+  {
+      background: wheat;
+      padding: 20px;
+      border: 1px solid rgba(52, 5, 2, 0.356);
+  }
+  
+.temados{
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
 
 
-            }
-            
-            .postdos{
-                background: violet;
-                color: black;
-                height: 180px;
-                display: grid;
-                display: flex;
-                align-items: center;
-                 background-color: grey;
-                 justify-content: center;
+  }
 
-                   }
-            }      
+
+  .fultimodos{
+      display: grid;
+      grid-column: 1/6;
+      background-color: grey;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       
+    }  
+
+    .conmasdos{
+   
+      display: grid; 
+      grid-column: span 5;
+   }
+
+   .sidebaridos{
+      grid-column: span 2;
+    color: black;
+      background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  }
+
+  .infodos{
+      background-color: cadetblue;
+      padding: 20px;
+      margin-top: 5px;
+      color: black;
+      }
+
+
+
+      .postdos{
+          background: violet;
+          color: black;
+          height: 150px;
+          display: grid;
+          display: flex;
+          align-items: center;
+           background-color: grey;
+           justify-content: center;
+             }     
+}
+
+.conmasdos {
+
+  .infodos h2{
+      padding: 10px;
+  }
+  .infodos p{
+  padding: 10px;
+  }
+
+}
 
      
 /*GRIDS Viajes*/
@@ -537,7 +560,7 @@ color: white;
      
         display: grid; 
         grid-column: span 3;
-     }
+     
 
      .sidebariuno{
         grid-column: span 2;
@@ -555,8 +578,6 @@ color: white;
         margin-top: 5px;
         color: black;
         }
-
-
 
         .postuno{
             background: violet;
@@ -579,12 +600,16 @@ color: white;
     padding: 10px;
     }
 
-}
+}}
 
 /*Queries Index */
 
 @media screen and (max-width:500px){
-    .container{
+   
+  
+  
+  
+  .container{
       background:rgb(161, 93, 221) ;
       grid-template-columns: repeat(5,1fr);
      
@@ -606,73 +631,61 @@ color: white;
 
 /*Queries Viajes */
 
-@media screen and (max-width:500px){
- .contodouno{
 
-  background: rgb(92, 75, 111);
-  width: 100%;
-  max-width: 1000px;
-  margin: 1.6em auto;
-  display: grid;
-  gap: 1.6em;
-  grid-template-columns: repeat(5,1fr);
-  
+
+@media screen and (max-width:500px)
+
+{
+  .peruzo{
+    width: 300px;
+    height: 300px;
+  }
+  .viajarmas{
+   width: 300px;
+   height: 300px;
+  }
+.textoviajes{
+  font-size: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-  .conmasuno{
+   .contodouno{
+     background: rgb(226, 117, 208);
+     grid-template-columns: repeat(5,1fr);
 
-    grid-column: 1/6;
-  }
-
-  .sidebariuno{
-
-    grid-column: 1;
-    color: black;
-  
-    background: rgb(226, 117, 208);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    }
-  }
-
-
-
-
-/*Queries Animales*/
-@media screen and (max-width:500px){
-   
-    .contodo{
-      background: rgb(226, 117, 208);
-      grid-template-rows: 1fr;
-
-      .conmas{
-    
-        grid-column: 1/6;
+     .conmasuno{
+      grid-column: 1/6 ;
+      justify-content: center;
       
-      }
+      
+      
+     
+     }
 
-  .fultimo{grid-column: 1/6;
+     .sidebaruno{
+       grid-column: 1fr;
+     }
 
-  }
-   .info{
-    grid-column: 1/6;
+     .postuno{
+       grid-column: 1fr;
+     }
+
+
+    } 
+   
    }
 
 
-
-
-     } 
-    
-    }
 
 /*Queries Curiosidades*/
 @media screen and (max-width:500px){
    img{
     width: 50%;
    }
+
+   
     .contododos{
       background: rgb(226, 117, 208);
-      grid-template-columns: 1fr;
+      grid-template-columns: 1/6;
 
       .conmasdos{
     
@@ -682,11 +695,11 @@ color: white;
 
 
       .sidebaridos{
-        grid-column: 1/6;
+        grid-column: 1fr;
       }
 
       .postdos{
-        grid-column: 1/6;
+        grid-column: 1fr;
       }
 
 
@@ -696,38 +709,26 @@ color: white;
   
 /*Queries Ciencia*/
 @media screen and (max-width:500px){
-   img{
-    width: 50%;
+  .ciencia{
+    width: 100%;
    }
-   .infotres{
-    margin-top: auto;
-   }
+
+   
     .contodotres{
-      background: rgb(92, 75, 111);
-  width: 100%;
-  max-width: 1000px;
-  margin: 1.6em auto;
-  display: grid;
-  gap: 1.6em;
-  grid-template-columns: repeat(5,1fr);
-      
+      background: rgb(226, 117, 208);
+      grid-template-columns: 1/6;
+
       .conmastres{
     
-        grid-column: 1.6;
-      
-      }
-      .sidebaritres{
-        grid-column: 1.6;
-      }
-
-      .posttres{
         grid-column: 1/6;
+      
       }
 
      } 
     
-    
     }
+   
+    
   
     /*EXTEND*/
 

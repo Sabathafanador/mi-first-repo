@@ -1,0 +1,573 @@
+@charset "UTF-8";
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(53, 50, 53);
+}
+
+.title h1, .footer h1 {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2.9em;
+  align-content: center;
+  background-color: rgb(0, 5, 5);
+  color: white;
+}
+
+.navar {
+  padding: 50px 0;
+  text-align: center;
+  font-size: 1em;
+  align-content: center;
+}
+
+header h1 {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2.9em;
+  align-content: center;
+  background-color: cadetblue;
+}
+header nav ul {
+  background-color: rgb(84, 45, 75);
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+header nav ul li {
+  display: inline-flex;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(237, 242, 233);
+  padding: 10px;
+  width: 100%;
+}
+header nav ul li a:hover {
+  background-color: white;
+}
+
+.imagenuno {
+  width: 120%;
+  height: 100%;
+}
+
+.imagendos {
+  width: 120%;
+  height: 100%;
+}
+
+.imagentres {
+  width: 120%;
+  height: 100%;
+}
+
+.imagencuatro {
+  width: 120%;
+  height: 100%;
+}
+
+.imagencinco {
+  width: 120%;
+  height: 100%;
+}
+
+.homero {
+  width: 50%;
+  height: 40%;
+}
+
+/*index*/
+.arepas {
+  width: 120%;
+  height: 120%;
+}
+
+.jamon {
+  width: 120%;
+  height: 120%;
+}
+
+.animalesuno {
+  margin: 0 auto;
+  display: block;
+}
+
+.niños {
+  width: 120%;
+  height: 120%;
+}
+
+.negraazul {
+  width: 120%;
+  height: 120%;
+}
+
+.paisaje {
+  width: 120%;
+  height: 120%;
+}
+
+.plantita {
+  width: 80%;
+  height: 40%;
+}
+
+.cerebro {
+  margin: 0 auto;
+  display: block;
+}
+
+.enamorados {
+  width: 50%;
+  height: 5% 0%;
+}
+
+.mamuts {
+  width: 300px;
+  height: 300px;
+}
+
+.fresas {
+  width: 300px;
+  height: 300px;
+}
+
+.cafeina {
+  width: 300px;
+  height: 300px;
+}
+
+.homerito {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+  animation: homerito 5s infinite;
+}
+
+@keyframes homerito {
+  0% {
+    transform: translateY(-50px);
+  }
+  30% {
+    transform: translateY(0) rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+/*viajes*/
+.destinos {
+  width: 300px;
+  margin: 0 auto;
+  animation: destinos 5s infinite;
+}
+
+@keyframes destinos {
+  0% {
+    transform: translateY(-50px);
+  }
+  30% {
+    transform: translateY(0);
+    rotate: 5deg;
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+.textoviajes {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.animalesuno {
+  width: 50%;
+  height: 50%;
+}
+
+/*Grids index*/
+.container {
+  background: rgb(219, 202, 202);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+.container .title, .container .footer {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: rgb(249, 244, 244);
+}
+
+.header,
+.content,
+.sidebar,
+.footer,
+div {
+  background: rgb(237, 217, 217);
+  padding: 20px;
+  border: 1px solid rgba(52, 5, 2, 0.356);
+}
+
+.footer {
+  display: grid;
+  grid-column: 1/6;
+  background-color: rgb(237, 9, 9);
+  color: rgb(244, 243, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: grid;
+  grid-column: span 3;
+}
+.content .sidebar {
+  grid-column: span 2;
+  color: black;
+  background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.content .article {
+  background-color: rgb(0, 4, 4);
+  padding: 20px;
+  margin-top: 5px;
+  color: rgba(250, 247, 247, 0.256);
+}
+.content .article h1,
+.content .article p {
+  padding: 10px;
+}
+
+.another {
+  background: violet;
+  color: black;
+  height: 180px;
+  display: grid;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  justify-content: center;
+}
+
+/*ANIMALESSSSSSSSSSSSSSSSSSSSSS*/
+.animal {
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.mundo {
+  border-radius: 30px;
+  width: 300px;
+  height: 300px;
+}
+
+.tema {
+  background-image: url(../image/67ea9b023881596e6f178b795623fd0cbebe.jpg);
+}
+
+/*GRIDS animales */
+/*GRIDS Ciencia */
+.contodotres {
+  background: rgb(2, 0, 4);
+  width: 100%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat 5, 1fr;
+}
+.contodotres .conmastres,
+.contodotres div {
+  background: rgb(230, 13, 121);
+  padding: 20px;
+  border: 1px solid rgba(110, 148, 33, 0.356);
+}
+.contodotres .conmastres {
+  display: grid;
+  grid-column: span 5;
+  color: white;
+  background-color: rgb(172, 173, 173);
+}
+.contodotres .conmastres .infotres {
+  background-color: black;
+  padding: 20px;
+  margin-top: 5px;
+  color: white;
+}
+
+/*GRIDS Curiosidades */
+.contododos {
+  background: rgb(18, 6, 182);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+.contododos .temados,
+.contododos .conmasdos,
+.contododos .sidebaridos,
+.contododos .fultimodos,
+.contododos div {
+  background: wheat;
+  padding: 20px;
+  border: 1px solid rgba(52, 5, 2, 0.356);
+}
+.contododos .temados {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+}
+.contododos .fultimodos {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contododos .conmasdos {
+  display: grid;
+  grid-column: span 3;
+}
+.contododos .sidebaridos {
+  grid-column: span 2;
+  color: black;
+  background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contododos .infodos {
+  background-color: cadetblue;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+}
+.contododos .postdos {
+  background: violet;
+  color: black;
+  height: 150px;
+  display: grid;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  justify-content: center;
+}
+
+.conmasdos .infodos h2 {
+  padding: 10px;
+}
+.conmasdos .infodos p {
+  padding: 10px;
+}
+
+/*GRIDS Viajes*/
+.contodouno {
+  background: rgb(18, 6, 182);
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+.contodouno .temauno,
+.contodouno .conmasuno,
+.contodouno .sidebariuno,
+.contodouno .fultimouno,
+.contodouno div {
+  background: wheat;
+  padding: 20px;
+  border: 1px solid rgba(52, 5, 2, 0.356);
+}
+.contodouno .temauno {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+}
+.contodouno .fultimouno {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contodouno .conmasuno {
+  display: grid;
+  grid-column: span 3;
+}
+.contodouno .conmasuno .sidebariuno {
+  grid-column: span 2;
+  color: black;
+  background-color: rgb(212, 144, 242);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contodouno .conmasuno .infouno {
+  background-color: cadetblue;
+  padding: 20px;
+  margin-top: 5px;
+  color: black;
+}
+.contodouno .conmasuno .postuno {
+  background: violet;
+  color: black;
+  height: 150px;
+  display: grid;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  justify-content: center;
+}
+.contodouno .conmasuno .infouno h2 {
+  padding: 10px;
+}
+.contodouno .conmasuno .infouno p {
+  padding: 10px;
+}
+
+/*Queries Index */
+@media screen and (max-width: 500px) {
+  .container {
+    background: rgb(161, 93, 221);
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .container .content {
+    grid-column: 1/5, 1fr;
+  }
+  .container .sidebar {
+    grid-column: 1/5;
+  }
+  .another {
+    grid-column: 1/5, 1fr;
+  }
+}
+/*Queries Viajes */
+@media screen and (max-width: 500px) {
+  .contodouno {
+    background: rgb(92, 75, 111);
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .conmasuno {
+    grid-column: 1/5, 1fr;
+  }
+  .sidebariuno {
+    grid-column: 1/5;
+    color: black;
+    background: rgb(226, 117, 208);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+/*Queries Animales*/
+@media screen and (max-width: 500px) {
+  .contodo {
+    background: rgb(226, 117, 208);
+    grid-template-rows: 1fr;
+  }
+  .contodo .conmas {
+    grid-column: 1/6;
+  }
+  .contodo .fultimo {
+    grid-column: 1/6;
+  }
+  .contodo .info {
+    grid-column: 1/6;
+  }
+}
+/*Queries Curiosidades*/
+@media screen and (max-width: 500px) {
+  img {
+    width: 50%;
+  }
+  .contododos {
+    background: rgb(226, 117, 208);
+    grid-template-columns: 1/6, 1fr;
+  }
+  .contododos .conmasdos {
+    grid-column: 1/6;
+  }
+  .contododos .sidebaridos {
+    grid-column: 1/6;
+  }
+  .contododos .postdos {
+    grid-column: 1/6, 1fr;
+  }
+}
+/*Queries Ciencia*/
+@media screen and (max-width: 500px) {
+  img {
+    width: 50%;
+  }
+  .infotres {
+    margin-top: auto;
+  }
+  .contodotres {
+    background: rgb(92, 75, 111);
+    width: 50%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+  }
+  .contodotres .conmastres {
+    grid-column: 1fr;
+  }
+  .contodotres .sidebaritres {
+    grid-column: 1fr;
+  }
+  .contodotres .posttres {
+    grid-column: 1fr;
+  }
+}
+/*EXTEND*/
+.container, title {
+  display: grid;
+  grid-column: 1/6;
+  background-color: grey;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=estilo.css.map */
