@@ -167,6 +167,25 @@ header nav ul li a:hover {
   }
 }
 /*animales*/
+.animal {
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.mundo {
+  border-radius: 30px;
+  width: 300px;
+  height: 300px;
+}
+
+.tema {
+  background-image: url(../image/67ea9b023881596e6f178b795623fd0cbebe.jpg);
+}
+
 .peligro {
   font-size: 30px;
   background-color: bisque;
@@ -176,10 +195,32 @@ header nav ul li a:hover {
 .aqui {
   background-image: url("../image/67ea9b023881596e6f178b795623fd0cbebe.jpg");
   background-position: center center;
+  margin: 5%;
 }
 
 .color {
   background-color: black;
+}
+
+.uno {
+  text-align: justify;
+}
+
+.dos {
+  text-align: justify;
+}
+
+.tres {
+  text-align: center;
+}
+
+.cuatro {
+  text-align: justify;
+}
+
+.letras {
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /*viajes*/
@@ -287,26 +328,6 @@ div {
   align-items: center;
   background-color: grey;
   justify-content: center;
-}
-
-/*ANIMALESSSSSSSSSSSSSSSSSSSSSS*/
-.animal {
-  padding: 0;
-  margin: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-}
-
-.mundo {
-  border-radius: 30px;
-  width: 300px;
-  height: 300px;
-}
-
-.tema {
-  background-image: url(../image/67ea9b023881596e6f178b795623fd0cbebe.jpg);
 }
 
 /*GRIDS animales */
